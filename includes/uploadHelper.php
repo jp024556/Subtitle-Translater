@@ -13,6 +13,7 @@ if(isset($_FILES['subFile']) && isset($_POST['targetLanguage'])){
 			$chk_query_run = mysqli_query($conn, $chk_query);
 			while($row = mysqli_fetch_assoc($chk_query_run)){
 				$id = $row['id'];
+				$k = $row['name'];
 			}
 			$count = mysqli_num_rows($chk_query_run);
 			if($count == 0){
@@ -54,7 +55,7 @@ if(isset($_FILES['subFile']) && isset($_POST['targetLanguage'])){
 				
 				echo "Go to <a href='subtitles.php?n=".$orig_filename."'>Download Page</a>";
 			}else{
-				echo "<p class='text-success'>This subtitle is already in our database.</p><a href='subtitles.php?n=".$orig_filename."'>Get your subtitle</a>";
+				echo "<p class='text-success'>This subtitle is already in our database.</p><a href='subtitles.php?n=".$k."'>Get your subtitle</a>";
 			}
 		}else{
 			echo "<h3 class='text-warning'>Only (.srt) extension is allowed !</h3>";
