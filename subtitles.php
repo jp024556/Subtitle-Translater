@@ -117,7 +117,7 @@
 				}
 				$count = mysqli_num_rows($query_run);
 				if($count != 0){
-				echo '<h4 class="alert alert-info" id="heading4">All language subtitles for <code>'.$name.'</code></h4>';
+				echo '<h4 class="alert alert-info" id="heading4">All language files for <code>'.$name.'</code></h4>';
 				$q = "SELECT * FROM subs_list WHERE sub_id = '{$id}'";
 				$q_run = mysqli_query($conn, $q);
 				$records = array();
@@ -136,14 +136,14 @@
 								$k = $i;
 							echo '
 							<td>'.$val.'</td>
-							<td class="dwds" data-id="'.$id.'"><a href="downloads/'.$records[$i]['name'].'" target="_blank">Download '.$records[$i]['name'].'</a></td>
+							<td class="dwds" data-id="'.$id.'"><a href="download.php?dl='.$records[$i]['name'].'" target="_blank">Download '.$records[$i]['name'].'</a></td>
 							';
 							}
 						}
 						if(!isset($k)){
 							echo '
 							<td>'.$val.'</td>
-							<td class="dwds" data-id="'.$id.'"><a href="download.php?dl='.$records[$i]['name'].'" target="_blank">Download '.$records[$i]['name'].'</a></td>
+							<td class="dwds" data-id="'.$id.'"><button class="btn btn-primary result" value="id='.$id.'&targetLanguage='.$key.'">Translate</button></td>
 							';
 							}
 					echo '</tr>';
