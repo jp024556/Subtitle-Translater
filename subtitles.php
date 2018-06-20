@@ -143,7 +143,7 @@
 						if(!isset($k)){
 							echo '
 							<td>'.$val.'</td>
-							<td class="dwds" data-id="'.$id.'"><button class="btn btn-primary result" value="id='.$id.'&targetLanguage='.$key.'">Translate</button></td>
+							<td class="dwds" data-id="'.$id.'"><a href="download.php?dl='.$records[$i]['name'].'" target="_blank">Download '.$records[$i]['name'].'</a></td>
 							';
 							}
 					echo '</tr>';
