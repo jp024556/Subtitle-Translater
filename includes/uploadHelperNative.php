@@ -41,7 +41,7 @@ fclose($outFile);
 $query = "INSERT INTO subs_list (sub_id, name, lang) VALUES ('{$id}', '{$filename}', '{$target}')";
 $query_run = mysqli_query($conn, $query);
 if($query_run){
-	echo "<a href='downloads/".$filename."'>Download ".$filename."</a>";
+	echo "<a href='download.php?dl=".$filename."'>Download ".$filename."</a>";
 }else{
 	echo 'Error Occurred !';
 }
