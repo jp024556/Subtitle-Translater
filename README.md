@@ -11,9 +11,9 @@ Usage
 ```
 ___
 ## Status of Subtitle-Translater
-> Maintained
+> Not Maintained any more.
 
-> You will get response to your pull request within 48 hours.
+> Please, use [Subtitle Translator And Editor](https://github.com/jp024556/Subtitle-Translator-And-Editor) which is packed with more features and functionality.
 
 > If you like my work then [donate](https://www.paypal.me/jp024556) some bucks to keep me going in future.
 ___
