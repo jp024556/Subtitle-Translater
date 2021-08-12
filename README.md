@@ -14,6 +14,4 @@ ___
 > Not Maintained any more.
 
 > Please, use [Subtitle Translator And Editor](https://github.com/jp024556/Subtitle-Translator-And-Editor) which is packed with more features and functionalities without having need for a database.
-
-> If you like my work then [donate](https://www.paypal.me/jp024556) some bucks to keep me going in future.
 ___
